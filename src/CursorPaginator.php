@@ -129,7 +129,6 @@ class CursorPaginator extends AbstractPaginator implements Arrayable, ArrayAcces
             'data' => collect($this->getCollection())->values()->all(),
             'per_page' => $this->perPage(),
             'total' => $this->meta['total'],
-            // 'next_item' => $this->meta['next_item'],
 
             'current_page' => $this->meta['current'],
             'first_page' => $this->meta['first'],
@@ -140,6 +139,7 @@ class CursorPaginator extends AbstractPaginator implements Arrayable, ArrayAcces
             'has_previous' => $this->meta['has_previous'],
 
             /*
+            'next_item' => $this->meta['next_item'],
             'first_page_url' => $this->firstPageUrl(),
             'last_page_url' => $this->lastPageUrl(),
             'next_page_url' => $this->nextPageUrl(),
