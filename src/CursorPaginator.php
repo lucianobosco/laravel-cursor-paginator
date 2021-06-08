@@ -139,11 +139,13 @@ class CursorPaginator extends AbstractPaginator implements Arrayable, ArrayAcces
             'previous_page' => $this->meta['previous'],
             'has_previous' => $this->meta['has_previous'],
 
+            /*
             'first_page_url' => $this->firstPageUrl(),
             'last_page_url' => $this->lastPageUrl(),
             'next_page_url' => $this->nextPageUrl(),
             'prev_page_url' => $this->previousPageUrl(),
             'path' => $this->path,
+            */
         ];
     }
 
